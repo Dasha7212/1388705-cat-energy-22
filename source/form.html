@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__bogy">
+    <header class="page-header">
+      <div class="main-nav__wrapper">
+        <a class="main__logo">
+          <img src="img/mobile-logo.svg" width="33" height="37" alt="cat-energy-logo">
+        </a>
+        <a class="main__logo-text">
+          <img src="img/logo2.svg" width="101" height="18" alt="cat-energy-logo-text">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="program-form">
+        <form action="https://echo.htmlacademy.ru/courses">
+          <div class="program__get-program">
+            <h1>Подбор программы</h1>
+            <h2>
+              Заполните анкету, и мы подберем
+              программу питания для вашего кота
+            </h2>
+            <p>
+              <label for="name-of-the-cat">
+                Имя: <sup>*</sup> <input type="text" name="cat-name" placeholder="Барсик" id="name-of-the-cat" required>
+              </label>
+            </p>
+            <p>
+              <label for="weight-of-the-cat">
+                Вес (кг): <sup>*</sup> <input type="text" name="cat-weight" placeholder="7" id="weight-of-the-cat" required>
+              </label>
+            </p>
+            <p>
+              <label for="age-of-the-cat">
+                Возраст (лет): <sup>*</sup> <input type="text" name="cat-age" placeholder="7" id="age-of-the-cat" required>
+              </label>
+            </p>
+          </div>
+          <div class="program__expectations">
+            <p>
+              <input type="radio" id="getting-fit" value="fit">
+              <label for="getting-fit">Похудение</label>
+            </p>
+            <p>
+              <input type="radio" id="getting-fat" value="fat">
+              <label for="getting-fit">Набор массы</label>
+            </p>
+            <p>
+              <input type="radio" id="dont-know" value="idk">
+              <label for="getting-fit">Не знаю (нужен ваш совет)</label>
+            </p>
+          </div>
+          <div class="program__contacts">
+            <h1>Контактные данные (владельца кота)</h1>
+            <p>
+              <label for="user-email">
+                E-mail: <sup>*</sup> <input type="email" name="e-mail" placeholder="kuklachev@gmail.com" id="user-email" required>
+              </label>
+            </p>
+            <p>
+              <label for="user-phone">
+                Телефон: <sup>*</sup> <input type="tel" name="phone" placeholder="8 (960) 900-60-90" id="user-phone" required>
+              </label>
+            </p>
+          </div>
+          <div class="program__comments">
+            <h1>Комментарий</h1>
+            <input type="text" placeholder="Расскажите обо всех повадках кота">
+          </div>
+          <div class="program__addition">
+            <h1>Дополнительно</h1>
+            <p>
+              <input type="checkbox" id="replace-sugar" checked>
+              <label for="replace-sugar">Сахарозаменитель</label>
+            </p>
+            <p>
+              <input type="checkbox" id="drink-water">
+              <label for="drink-water">Питьевая вода</label>
+            </p>
+            <p>
+              <input type="checkbox" id="milk">
+              <label for="milk">Молоко</label>
+            </p>
+            <p>
+              <input type="checkbox" id="vitamins">
+              <label for="vitamins">Витамины</label>
+            </p>
+          </div>
+          <input type="submit" value="Отправить заявку">
+          <p>
+            * — Обязательные поля
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+       <div class="page-footer__contacts contacts">
+        <p>
+          приглашаем к сотрудничеству дилеров!
+        </p>
+        <p>
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+        <img src="img/map.png" width="320" height="362" alt="map">
+       </div>
+       <div class="page-footer__socials socials">
+        <img src="img/logo2.svg" width="128" height="24" alt="cat-energy-logo-text">
+        <img src="img/icon_vkontakte.svg" width="22" height="12" alt="vk-icon">
+        <img src="img/icon_instagram.svg" width="22" height="12" alt="instagram-icon">
+        <img src="img/icon_facebook.svg" width="22" height="12" alt="facebook-icon">
+       </div>
+       <div class="page-footer__copyright copyright">
+        <p>
+          HTML Academy
+        </p>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy-icon">
+       </div>
+      </div>
+    </footer>
+  </body>
+</html>
