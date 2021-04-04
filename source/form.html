@@ -3,49 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__bogy">
     <header class="page-header">
-      <div class="main-nav__wrapper">
-        <a class="main__logo">
-          <img src="img/mobile-logo.svg" width="33" height="37" alt="cat-energy-logo">
-        </a>
-        <a class="main__logo-text">
-          <img src="img/logo2.svg" width="101" height="18" alt="cat-energy-logo-text">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="header__container">
+          <a class="main__logo">
+            <img src="img/mobile-logo.svg" width="33" height="37" alt="cat-energy-logo">
+          </a>
+          <a class="main__logo-text">
+            <img src="img/logo2.svg" width="101" height="18" alt="cat-energy-logo-text">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+        </div>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
     <main class="page-main">
       <div class="program-form">
-        <form action="https://echo.htmlacademy.ru/courses">
-          <fieldset class="program__get-program">
-            <legend>Подбор программы</legend>
-            <legend>
+        <form action="https://echo.htmlacademy.ru/courses" id="form-for-user">
+            <h1 class="program__title">Подбор программы</h1>
+            <p class="program__description">
               Заполните анкету, и мы подберем
               программу питания для вашего кота
-            </legend>
+            </p>
+          <fieldset class="program__get-program">
             <ul role="none" class="program__questions-list">
               <li class="program-list__item">
                 <label for="name-of-the-cat">
@@ -82,8 +87,8 @@
               </li>
             </ul>
           </fiеldset>
+          <h1 class="program__title">Контактные данные (владельца кота)</h1>
           <fieldset class="program__contacts">
-            <legend>Контактные данные (владельца кота)</legend>
             <ul role="none" class="contacts__list">
               <li>
                 <label for="user-email">
@@ -104,8 +109,8 @@
             <textarea class="comment__textarea" id="cat-habits" placeholder="Расскажите обо всех повадках кота">
             </textarea>
           </div>
+          <h1 class="program__title">Дополнительно</h1>
           <fieldset class="program__addition">
-            <legend>Дополнительно</legend>
             <ul role="none" class="addition__list">
               <li>
                 <input type="checkbox" id="replace-sugar" checked>
@@ -125,7 +130,7 @@
               </li>
             </ul>
           </fieldset>
-          <input type="submit" value="Отправить заявку">
+          <button type="submit" form="form-for-user" value="Отправить заявку">Отправить заявку</button>
           <p>
             * — Обязательные поля
           </p>
