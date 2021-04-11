@@ -3,7 +3,27 @@
   font-size: 36px;
   line-height: 40px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
+
+.how-works__start-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 
 .first {
   padding-top: 22px;
@@ -24,4 +44,15 @@
   line-height: 18px;
   color: #444444;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    height: 280px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
+    height: 280px;
+    padding-left: 0;
+  }
 }

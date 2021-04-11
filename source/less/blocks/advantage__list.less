@@ -3,12 +3,39 @@
   width: 280px;
   height: 266px;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 372px;
+    margin-top: 575px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    height: 374px;
+  }
+}
+
+.advantage__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .advantage__list-second {
   width: 280px;
   height: 266px;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 372px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    height: 374px;
+  }
 }
 
 .advantage__title {
@@ -17,6 +44,15 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding-left: 53px;
+    padding-top: 77px;
+  }
 }
 
 .advantage__title::before {
@@ -29,6 +65,10 @@
   margin-right: 19px;
   margin-left: 22px;
   vertical-align: -16px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .advantage__title-second {
@@ -37,6 +77,15 @@
   line-height: 37px;
   text-transform: uppercase;
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding-left: 53px;
+    padding-top: 77px;
+  }
 }
 
 .advantage__title-second::before {
@@ -49,6 +98,10 @@
   margin-right: 11px;
   margin-left: 13px;
   vertical-align: -16px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .advantage__description {
@@ -61,6 +114,17 @@
   padding-bottom: 23px;
   color: #444444;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 52px;
+    padding-top: 24px;
+    width: 377px;
+  }
 }
 
 .advantage__link {
@@ -69,6 +133,13 @@
   line-height: 16px;
   text-transform: uppercase;
   padding-left: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 52px;
+  }
 }
 
 .advantage__link::after {
@@ -78,4 +149,8 @@
   height: 10px;
   padding-left: 30px;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 25px;
+  }
 }
