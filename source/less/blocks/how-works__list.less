@@ -11,7 +11,7 @@
   }
 }
 
-.how-works__start-list {
+.how-works__list {
   @media (min-width: @tablet-width) {
     display: flex;
     align-content: space-between;
@@ -24,19 +24,11 @@
   }
 }
 
-
-.first {
+.how-works__list:first-child {
   padding-top: 22px;
 }
 
-.first::before {
-  content: "";
-  background-image: "url(../../img/Group1-icon.png)";
-  width: 60px;
-  height: 60px;
-}
-
-.how-works__list-item {
+.how-works__item {
   padding-left: 100px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
